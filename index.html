@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- icono -->
+    <link rel="icon" type="image/x-icon" href="img/ramo.png">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom styles -->
+    <link rel="stylesheet" href="assets/boot/style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navbar-toggler"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-toggler">
+                <a class="navbar-brand" href="#">
+                    <img class="rt" src="img/ramo.png" alt="Logo" width="30" height="30">
+                </a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tarjetas">Catalogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- seccion principal -->
+    <section class="prod align-items-stretch" id="Home">
+        <div class="principal">
+            <img class="img-perfil rounded-circle" src="img/wel.svg" alt="imagen principal" <br>
+        </div>
+        <!-- seccion nuevo producto -->
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Formulario">
+            Nuevo Producto
+        </button>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <!-- seccion de tarjetas -->
+    <section id="tarjetas">
+        <div class="container my-5">
+            <h1 class="text-center mb-4">Productos Ramo</h1>
+            <div class="row g-4" id="contenedor-card">
+                <!-- Tarjeta 1 -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="https://vaquitaexpress.com.co/media/catalog/product/cache/e89ece728e3939ca368b457071d3c0be/7/7/7702914596787_40.jpg"
+                            class="card-img-top" alt="Chocoramo">
+                        <div class="card-body">
+                            <h5 class="card-title">Chocoramo</h5>
+                            <p class="card-text">Bizcocho cubierto con chocolate.</p>
+                            <p class="text-primary fw-bold">$3.50</p>
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary">
+                            <i class="fa-solid fa-pen"></i>
+                        </button>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-danger">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- Tarjeta 2 -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img class="" src="https://http2.mlstatic.com/D_NQ_NP_939417-MLU79073761927_092024-O.webp"
+                            class="card-img-top" alt="Gansito">
+                        <div class="card-body">
+                            <h5 class="card-title">Gansito</h5>
+                            <p class="card-text">Pastel relleno de crema y mermelada.</p>
+                            <p class="text-primary fw-bold">$2.75</p>
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary">
+                            <i class="fa-solid fa-pen"></i>
+                        </button>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-danger">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- Tarjeta 3 -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="https://supermercadoslacanasta.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6OTc0ODExLCJwdXIiOiJibG9iX2lkIn19--661f7e1fabff6a2eb6dc21f5cb2d1f736b51064f/7702914594462.png?locale=es"
+                            class="card-img-top" alt="Ponqué Ramo">
+                        <div class="card-body">
+                            <h5 class="card-title">Ponqué Ramo</h5>
+                            <p class="card-text">Bizcocho esponjoso tradicional.</p>
+                            <p class="text-primary fw-bold">$2.00</p>
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary">
+                            <i class="fa-solid fa-pen"></i>
+                        </button>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-danger">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- Tarjeta 4 -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiq1-V_9Vq4SxyxFRWAGNia_-TvrYxoQlNsw&s"
+                            class="card-img-top" alt="Achiras Ramo">
+                        <div class="card-body">
+                            <h5 class="card-title">Achiras Ramo</h5>
+                            <p class="card-text">Galletas de queso tradicionales.</p>
+                            <p class="text-primary fw-bold">$1.50</p>
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary">
+                            <i class="fa-solid fa-pen"></i>
+                        </button>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-danger">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- Tarjeta 5 -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="https://supermercadoslacanasta.caxtor.co/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6ODY5NTc4LCJwdXIiOiJibG9iX2lkIn19--6e98d87f39429e03806a7c125eb4fd6661046efb/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2ZpdCI6WzYwMCw2MDBdfSwicHVyIjoidmFyaWF0aW9uIn19--f071e30ecad735fd2ab55c9d9f5412fe02d64321/7702011045676?locale=es"
+                            class="card-img-top" alt="Nucita Ramo">
+                        <div class="card-body">
+                            <h5 class="card-title">Nucita Ramo</h5>
+                            <p class="card-text">Crema de avellanas con sabor a chocolate.</p>
+                            <p class="text-primary fw-bold">$1.20</p>
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary">
+                            <i class="fa-solid fa-pen"></i>
+                        </button>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-danger">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- seccion de modal y form -->
+    <div class="modal fade" id="Formulario" tabindex="-1" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog">
+            <form class="prodForm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Productos</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="text" readonly name="editar" id="editar" class="sr-only" />
+
+                        <div class="mb-3">
+                            <label for="Nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Producto" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="descripcion" class="form-label">Descripcion</label>
+                            <input type="text" class="form-control" id="descripcion" placeholder="descripcion"
+                                required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="precio" class="form-label">Precio</label>
+                            <input type="number" class="form-control" id="precio" placeholder="Precio" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="image" class="form-label">url</label>
+                            <input type="url" class="form-control" id="image"
+                                placeholder="https://example.com/image.jpg" required />
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
+                                Enviar
+                            </button>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal"
+                                    onclick="limpiarFormulario()">
+                                    Limpiar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- jsdelivr -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="/assets/script/script.js" type="module"></script>
+</body>
+
+</html>

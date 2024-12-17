@@ -1,0 +1,76 @@
+/* barra de navigation */
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000; /* Pone la barra encima del contenido */
+  border-bottom: 1px solid #030001; /* Opcional: agrega una línea separadora */
+  background-color: #e8eaec;
+}
+
+body {
+  animation: Background 1.5s ease-in-out;
+  margin: 0; /* Evitar desplazamientos no deseados */
+  transform-origin: top; /* Define el punto de origen del escalado */
+}
+
+@keyframes Background {
+  from {
+    transform: scale(0.5); /* Escala inicial segundos de transcicion*/
+  }
+  to {
+    transform: scale(1); /* Escala final */
+    background-color: #353333; /* Color final */
+  }
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+
+#tarjetas .card:hover {
+  transform: scale(1.1); /* Efecto de zoom */
+  transition: transform 0.2s ease-in-out; /* Animación de efecto de zoom */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse por encima */
+  color: white;
+  background-color: #1b1b32;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.rt {
+  width: 60px;
+  height: 60px;
+}
+
+.img-perfil {
+  width: 400px;
+  height: 400px;
+}
+/* hover */
+.card img {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
+  height: 200px; /* Fija la altura de las imágenes */
+  object-fit: cover; /* Recorta la imagen para que encaje sin deformarse */
+  border-radius: 8px;
+}
+
+/* seccion principal */
+section {
+  background-color: #f5f6f7;
+  padding: 2rem;
+  min-height: 450px;
+  text-align: center;
+}
+
+/* aplicar estilos condicionales dependiendo de las características del dispositivo o la ventana donde se está viendo el contenido. */
+@media screen and(max-width: 768px) {
+  .navbar-brand {
+    /* para ocultar un elemento completamente de la página */
+    display: none;
+  }
+}
