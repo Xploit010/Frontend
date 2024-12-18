@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     form.addEventListener("submit", function (event) {
         event.preventDefault(); // Evita que se recargue la página
-        console.log('prueba')
         const data = {
 
 
@@ -48,8 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
 export function cargaDatosProducto() {
     const card = document.querySelector("#contenedor-card");
     card.innerHTML = "";
-    // peticion a localhost:3000/clientes del server de node
-    // Mostrar los datos del producto en la tabla
+    // peticion a localhost:3000/productos del server de node
     api.get(`/productos`).then(({ data }) => {
         for (const producto of data) {
 
